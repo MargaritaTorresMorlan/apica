@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formulario</title>
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/temasapp8.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="phonegap.js"></script><!--necesario*/-->
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/script.js"></script>
+
+<style type="text/css">
+body {
+	background-image: url(imagenes/foto5.jpeg);
+}
+body,td,th {
+	color: #F9F;
+}
+</style>
+</head>
+
+<body onLoad="MM_preloadImages('/proyecto/imagenes/sola3.jpg')">
+<FONT SIZE="5" face="Harrington" ><H1><CENTER>"**SOCIO ECONOMICO**"</CENTER></H1></FONT>
+<p onClick="mostrarMensaje1()"></p>
+<form name="formulario">
+  <input type="text" name="horafecha" id="horafecha" value="" size="40">
+<input type="button" value="Obtener Fecha y Hora" onClick="fechahora()">
+</form>
+<div align="center"><br>
+  <img src="imagenes/sola8.jpg" width="208" height="393" border="2" align="left">  
+  <h2>**DATOS GENERALES DEL USUARIO**</h2>
+</div>
+<form>
+  <p align="left"> Nombre
+  <input type="text" name="nombre" size="30"
+maxlength="100">
+  Apellidos
+  <input type="text"
+name="Apellidos" size="25" maxlength="100">       
+  Sexo 
+  <input type="radio" name="sexo" value="Varon"
+checked> 
+  Hombre
+  <input type="radio" name="sexo" value="Hembra"> 
+  Mujer <br>
+  <br>
+   Edad: <input type="text" name="edad" size="25" maxlength="100" > 
+   Email <input type="text" name="email" size="25" maxlength="100" value="@">
+  Fecha de Nacimiento: <input type="text" name="nac" size="20" maxlength="100">
+  <br><br>
+    Estado Civil:<input type="radio" name="civil" value="casado"checked> 
+    Casado  
+    <input type="radio" name="civil" value="divorsiado">
+    Divorsiado 
+    <br><br> 
+    Escolaridad:
+    <input type="text" name="esco" size="25" maxlength="100">
+  <p align="left">  Ocupacion:
+    <input type="text" name="ocu" size="25" maxlength="100">
+  <p align="left">
+  Seleciona tu pais:
+    <select name="utilizacion">
+      <option value="1">Egipto
+      <option value="2">Argentina
+      <option value="3">Brasil          
+      <option value="4">Canadá 
+      <option value="5">Ecuador
+      <option value="6">México
+      <option value="7">Panamá
+  </select>  
+  <p align="left">  
+  <p align="left">
+    <input type="checkbox" name="mayor_edad" value="1" id="mayoria_edad"> 
+    Soy Mayor de edad
+    <br>
+  <div id="formulariomayores" style="display:none;">
+ ERES MAYOR DE EDAD ¡FELICIDADES!:<br>
+  </div>
+  <p align="left"> Escribe tu dirección:<br>
+    <textarea cols="25" rows="7" name="Escribe tu Direccion:">
+    </textarea>
+    <br><br><br><br>  
+    <hr>
+  <p align="center"><h2 align="center"> **DATOS DE IDENTIFICACION DOMICILIARIA**</h2>
+  <p><img src="imagenes/sola9.jpg" width="230" height="255" border="2" align="right"><br>
+    Domicilio: 
+    <input type="text" name="domi" size="25" maxlength="100">
+  </p>
+  <p>Colonia:
+  <input type="text" name="domi" size="25" maxlength="100">
+    <br><br>
+    Codigo Postal:
+    <input type="text" name="codi" size="25" maxlength="100">
+  </p>
+  <p>Delegacion:
+  <input type="text" name="dele" size="25" maxlength="100">
+    <br><br>
+    Unidad territorial:
+    <input type="text" name="uni" size="25" maxlength="100">
+  </p>
+  <p>Telefono:
+  <input type="text" name="tel" size="25" maxlength="100">
+    <br><br>
+    Medios de transporte para llegar al domicilio:
+    <input type="text" name="medio" size="25" maxlength="100">
+    <br><br><br><br><br><br><br>
+  </p>
+  <hr>
+  <center><h2>**VIVIENDA**</h2></center>
+   <img src="imagenes/sola10.jpg" width="361" height="255" border="2" align="left">Tenencia de la vivienda:
+<select name="utilizacion">
+    <option value="1">Propia
+    <option value="2">Rentada
+    <option value="3">Prestada         
+    <option value="4">Invadida 
+  </select>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <input name="Enviar" type="submit"
+value="Enviar formulario" >
+  <input type="Reset" value="Borrar todo">
+  <br> <br>
+  <hr>
+<H2><center>ALUMNA: MARGARITA TORRES MORLAN</center></H2>
+<hr>
+</form>
+</body>
+</html>
