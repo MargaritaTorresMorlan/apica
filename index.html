@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
 <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
 <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
-<link rel="stylesheet" href="css/temasapp8.min.css"/>
+<link rel="stylesheet" href="css/apica.min.css"/>
 <!--grupo JavaScript-->
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
@@ -15,13 +15,6 @@
 <script src="js/jquery-3.1.0.min.js"></script>
 <script src="js/script.js"></script>
 
-<style type="text/css">
-body {
-	background-image: url(imagenes/foto5.jpeg);
-}
-body,td,th {
-	color: #F9F;
-}
 </style>
 </head>
 
@@ -33,7 +26,8 @@ body,td,th {
 <input type="button" value="Obtener Fecha y Hora" onClick="fechahora()">
 </form>
 <div align="center"><br>
-  <img src="imagenes/sola8.jpg" width="208" height="393" border="2" align="left">  
+  <img src="imagenes/sola8.jpg" width="187" height="393" border="2" align="left">  
+  <h2>&nbsp;</h2>
   <h2>**DATOS GENERALES DEL USUARIO**</h2>
 </div>
 <form>
@@ -43,8 +37,8 @@ maxlength="100">
   Apellidos
   <input type="text"
 name="Apellidos" size="25" maxlength="100">       
-  Sexo 
-  <input type="radio" name="sexo" value="Varon"
+  Sexo
+    <input type="radio" name="sexo" value="Varon"
 checked> 
   Hombre
   <input type="radio" name="sexo" value="Hembra"> 
@@ -54,9 +48,11 @@ checked>
    Email <input type="text" name="email" size="25" maxlength="100" value="@">
   Fecha de Nacimiento: <input type="text" name="nac" size="20" maxlength="100">
   <br><br>
-    Estado Civil:<input type="radio" name="civil" value="casado"checked> 
+    Estado Civil:  
+  <p align="left">
+     <input type="radio" name="civil" value="casado"checked> 
     Casado  
-    <input type="radio" name="civil" value="divorsiado">
+     <input type="radio" name="civil" value="divorsiado">
     Divorsiado 
     <br><br> 
     Escolaridad:
@@ -64,21 +60,19 @@ checked>
   <p align="left">  Ocupacion:
     <input type="text" name="ocu" size="25" maxlength="100">
   <p align="left">
-  Seleciona tu pais:
-    <select name="utilizacion">
-      <option value="1">Egipto
+  <p align="left">Seleciona tu pais:
+  <select name="utilizacion">
+    <option value="1">Egipto
       <option value="2">Argentina
       <option value="3">Brasil          
       <option value="4">Canadá 
       <option value="5">Ecuador
       <option value="6">México
       <option value="7">Panamá
-  </select>  
-  <p align="left">  
+    </select>  
   <p align="left">
     <input type="checkbox" name="mayor_edad" value="1" id="mayoria_edad"> 
-    Soy Mayor de edad
-    <br>
+    Soy Mayor de edad<br>
   <div id="formulariomayores" style="display:none;">
  ERES MAYOR DE EDAD ¡FELICIDADES!:<br>
   </div>
@@ -89,7 +83,9 @@ checked>
     <hr>
   <p align="center"><h2 align="center"> **DATOS DE IDENTIFICACION DOMICILIARIA**</h2>
   <p><img src="imagenes/sola9.jpg" width="230" height="255" border="2" align="right"><br>
-    Domicilio: 
+  </p>
+  <p>&nbsp;</p>
+  <p>Domicilio:
     <input type="text" name="domi" size="25" maxlength="100">
   </p>
   <p>Colonia:
